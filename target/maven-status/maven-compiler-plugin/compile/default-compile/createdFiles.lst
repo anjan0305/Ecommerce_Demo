@@ -1,0 +1,8 @@
+Pages\Shipping.class
+Pages\Cart.class
+Pages\OrderDetails.class
+Pages\SearchProduct.class
+Pages\CompleteOrder.class
+Pages\LoginPage.class
+Pages\Details.class
+Pages\Checkout.class

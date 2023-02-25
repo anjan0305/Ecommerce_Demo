@@ -1,0 +1,7 @@
+<suite name="OpenCartTests" parallel="tests" >
+    <test name="LoginValidation"  thread-count="3">
+        <classes>
+            <class name="UiScripts.TestCases.LoginValidation"  />
+        </classes>
+    </test>
+</suite>
