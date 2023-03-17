@@ -1,8 +1,11 @@
 Pages\Shipping.class
 Pages\Cart.class
 Pages\OrderDetails.class
+Pages\PageFactoryManager.class
 Pages\SearchProduct.class
 Pages\CompleteOrder.class
 Pages\LoginPage.class
+Pages\BasePage.class
+Pages\Register.class
 Pages\Details.class
 Pages\Checkout.class

@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="OpenCartTests" parallel="tests" >
+    <test name="LoginValidation">
+        <classes>
+            <class name="UiScripts.TestCases.LoginValidation"  />
+        </classes>
+    </test>
+    <test name="SearchProduct">
+        <classes>
+            <class name="UiScripts.TestCases.SearchProduct"  />
+        </classes>
+    </test>
+    <test name="DeliveryOrder">
+        <classes>
+            <class name="UiScripts.TestCases.DeliveryOrder"  />
+        </classes>
+    </test>
+    <test name="CompleteOrder">
+        <classes>
+            <class name="UiScripts.TestCases.CompleteOrder"  />
+        </classes>
+    </test>
+    <test name="CompleteLogin">
+        <classes>
+            <class name="UiScripts.TestCases.CompleteLogin"  />
+        </classes>
+    </test>
+</suite>

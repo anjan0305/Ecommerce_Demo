@@ -1,0 +1,43 @@
+version: "3"
+services:
+  hub:
+    image: selenium/hub:latest
+    ports: 
+      - "4444:4444"
+      - "4443:4443"
+      - "4442:4442"
+  chrome:
+    image: selenium/node-chrome:110.0
+    shm_size: 1gb
+    depends_on:
+      - hub
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+  edge:
+    image: selenium/node-edge:110.0
+    shm_size: 1gb
+    depends_on:
+      - hub
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+  test-sleep:
+    image: busybox  
+    command: ["/bin/sleep", "35"]
+    depends_on:
+      - chrome
+      - edge
+  registrationsuite:
+    image: anjan0305/seleniumdocker:latest
+    depends_on:
+      - test-sleep
+      - chrome
+      - edge
+    environment:
+      - HOST_NAME=172.28.224.1
+      - MODULE=RegistrationRunner.xml
+    volumes:
+       - ./RegistrationTests/test-output:/usr/share/codebase/test-output       

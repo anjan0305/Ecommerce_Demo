@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [OpenLoginTests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="SearchProduct(failed)">
+    <classes>
+      <class name="UiScripts.TestCases.SearchProduct">
+        <methods>
+          <include name="userRegistrationSecondTest"/>
+          <include name="tearDown"/>
+          <include name="InitializationDriver"/>
+        </methods>
+      </class> <!-- UiScripts.TestCases.SearchProduct -->
+    </classes>
+  </test> <!-- SearchProduct(failed) -->
+  <test thread-count="5" parallel="tests" name="LoginValidation(failed)">
+    <classes>
+      <class name="UiScripts.TestCases.LoginValidation">
+        <methods>
+          <include name="userRegistrationTest"/>
+          <include name="tearDown"/>
+          <include name="InitializationDriver"/>
+        </methods>
+      </class> <!-- UiScripts.TestCases.LoginValidation -->
+    </classes>
+  </test> <!-- LoginValidation(failed) -->
+</suite> <!-- Failed suite [OpenLoginTests] -->

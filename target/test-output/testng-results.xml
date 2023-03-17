@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-13T20:13:41 IST" name="OpenCartTests" finished-at="2023-03-13T20:14:21 IST" duration-ms="40639">
+    <groups>
+    </groups>
+    <test started-at="2023-03-13T20:13:41 IST" name="CompleteLogin" finished-at="2023-03-13T20:14:01 IST" duration-ms="19723">
+      <class name="UiScripts.TestCases.CompleteLogin">
+        <test-method is-config="true" signature="InitializationDriver()[pri:0, instance:UiScripts.TestCases.CompleteLogin@7c469c48]" started-at="2023-03-13T20:13:41 IST" name="InitializationDriver" finished-at="2023-03-13T20:13:57 IST" duration-ms="16505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializationDriver -->
+        <test-method signature="loginTest()[pri:0, instance:UiScripts.TestCases.CompleteLogin@7c469c48]" started-at="2023-03-13T20:13:57 IST" name="loginTest" finished-at="2023-03-13T20:14:00 IST" duration-ms="2914" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User is not logged on succesfully expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User is not logged on succesfully expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at UiScripts.TestCases.CompleteLogin.loginTest(CompleteLogin.java:15)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UiScripts.TestCases.CompleteLogin@7c469c48]" started-at="2023-03-13T20:14:00 IST" name="tearDown" finished-at="2023-03-13T20:14:01 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- UiScripts.TestCases.CompleteLogin -->
+    </test> <!-- CompleteLogin -->
+    <test started-at="2023-03-13T20:13:41 IST" name="CompleteOrder" finished-at="2023-03-13T20:14:14 IST" duration-ms="32797">
+      <class name="UiScripts.TestCases.CompleteOrder">
+        <test-method is-config="true" signature="InitializationDriver()[pri:0, instance:UiScripts.TestCases.CompleteOrder@159f197]" started-at="2023-03-13T20:13:41 IST" name="InitializationDriver" finished-at="2023-03-13T20:14:09 IST" duration-ms="28041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializationDriver -->
+        <test-method signature="userRegistration3rdTest()[pri:0, instance:UiScripts.TestCases.CompleteOrder@159f197]" started-at="2023-03-13T20:14:09 IST" name="userRegistration3rdTest" finished-at="2023-03-13T20:14:13 IST" duration-ms="4462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistration3rdTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UiScripts.TestCases.CompleteOrder@159f197]" started-at="2023-03-13T20:14:13 IST" name="tearDown" finished-at="2023-03-13T20:14:14 IST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- UiScripts.TestCases.CompleteOrder -->
+    </test> <!-- CompleteOrder -->
+    <test started-at="2023-03-13T20:13:41 IST" name="DeliveryOrder" finished-at="2023-03-13T20:14:21 IST" duration-ms="40639">
+      <class name="UiScripts.TestCases.DeliveryOrder">
+        <test-method is-config="true" signature="InitializationDriver()[pri:0, instance:UiScripts.TestCases.DeliveryOrder@7ff95560]" started-at="2023-03-13T20:13:41 IST" name="InitializationDriver" finished-at="2023-03-13T20:14:17 IST" duration-ms="35981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializationDriver -->
+        <test-method signature="userRegistrationFourthTest()[pri:0, instance:UiScripts.TestCases.DeliveryOrder@7ff95560]" started-at="2023-03-13T20:14:17 IST" name="userRegistrationFourthTest" finished-at="2023-03-13T20:14:21 IST" duration-ms="4422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationFourthTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UiScripts.TestCases.DeliveryOrder@7ff95560]" started-at="2023-03-13T20:14:21 IST" name="tearDown" finished-at="2023-03-13T20:14:21 IST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- UiScripts.TestCases.DeliveryOrder -->
+    </test> <!-- DeliveryOrder -->
+  </suite> <!-- OpenCartTests -->
+</testng-results>

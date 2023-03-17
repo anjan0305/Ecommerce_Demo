@@ -1,0 +1,6 @@
+UiScripts\TestCases\CompleteOrder.class
+UiScripts\TestCases\LoginValidation.class
+UiScripts\TestCases\DeliveryOrder.class
+UiScripts\BaseTest.class
+UiScripts\TestCases\CompleteLogin.class
+UiScripts\TestCases\SearchProduct.class

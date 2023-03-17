@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-13T17:10:07 GMT" name="OpenCartTests" finished-at="2023-03-13T17:14:01 GMT" duration-ms="234193">
+    <groups>
+    </groups>
+    <test started-at="2023-03-13T17:10:07 GMT" name="CompleteOrder" finished-at="2023-03-13T17:14:00 GMT" duration-ms="233479">
+      <class name="UiScripts.TestCases.CompleteOrder">
+        <test-method is-config="true" signature="InitializationDriver()[pri:0, instance:UiScripts.TestCases.CompleteOrder@52e677af]" started-at="2023-03-13T17:10:07 GMT" name="InitializationDriver" finished-at="2023-03-13T17:10:44 GMT" duration-ms="37623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializationDriver -->
+        <test-method signature="userRegistration3rdTest()[pri:0, instance:UiScripts.TestCases.CompleteOrder@52e677af]" started-at="2023-03-13T17:10:44 GMT" name="userRegistration3rdTest" finished-at="2023-03-13T17:14:00 GMT" duration-ms="195227" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '19-ea'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [35631f099832b21158048ca16b390cb5, sendKeysToElement {id=15697ff4-1284-42eb-9f1b-f2c473c663f1, value=[Ljava.lang.CharSequence;@6de6beec}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /tmp/.com.google.Chrome.NTxsl1}, goog:chromeOptions: {debuggerAddress: localhost:42663}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.22.0.6:4444/sessio..., se:cdpVersion: 110.0.5481.177, se:vnc: ws://172.22.0.6:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on LINUX (35631f099832b21158048ca16b390cb5)] -> id: LastName]
+Session ID: 35631f099832b21158048ca16b390cb5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '19-ea'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [35631f099832b21158048ca16b390cb5, sendKeysToElement {id=15697ff4-1284-42eb-9f1b-f2c473c663f1, value=[Ljava.lang.CharSequence;@6de6beec}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /tmp/.com.google.Chrome.NTxsl1}, goog:chromeOptions: {debuggerAddress: localhost:42663}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.22.0.6:4444/sessio..., se:cdpVersion: 110.0.5481.177, se:vnc: ws://172.22.0.6:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on LINUX (35631f099832b21158048ca16b390cb5)] -> id: LastName]
+Session ID: 35631f099832b21158048ca16b390cb5
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:55)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at Pages.Register.confirm_registration(Register.java:25)
+at UiScripts.TestCases.CompleteOrder.userRegistration3rdTest(CompleteOrder.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistration3rdTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UiScripts.TestCases.CompleteOrder@52e677af]" started-at="2023-03-13T17:14:00 GMT" name="tearDown" finished-at="2023-03-13T17:14:00 GMT" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- UiScripts.TestCases.CompleteOrder -->
+    </test> <!-- CompleteOrder -->
+    <test started-at="2023-03-13T17:10:07 GMT" name="DeliveryOrder" finished-at="2023-03-13T17:14:01 GMT" duration-ms="234132">
+      <class name="UiScripts.TestCases.DeliveryOrder">
+        <test-method is-config="true" signature="InitializationDriver()[pri:0, instance:UiScripts.TestCases.DeliveryOrder@797badd3]" started-at="2023-03-13T17:10:07 GMT" name="InitializationDriver" finished-at="2023-03-13T17:10:44 GMT" duration-ms="37012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializationDriver -->
+        <test-method signature="userRegistrationFourthTest()[pri:0, instance:UiScripts.TestCases.DeliveryOrder@797badd3]" started-at="2023-03-13T17:10:44 GMT" name="userRegistrationFourthTest" finished-at="2023-03-13T17:14:00 GMT" duration-ms="196448" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '19-ea'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [a8e9236504c1431ecc784372643f78bd, sendKeysToElement {id=b1bc6977-da6c-4277-a905-744442c0d874, value=[Ljava.lang.CharSequence;@4f126a05}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /tmp/.com.google.Chrome.Axc5yW}, goog:chromeOptions: {debuggerAddress: localhost:33471}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.22.0.5:4444/sessio..., se:cdpVersion: 110.0.5481.177, se:vnc: ws://172.22.0.5:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on LINUX (a8e9236504c1431ecc784372643f78bd)] -> id: LastName]
+Session ID: a8e9236504c1431ecc784372643f78bd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '19-ea'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [a8e9236504c1431ecc784372643f78bd, sendKeysToElement {id=b1bc6977-da6c-4277-a905-744442c0d874, value=[Ljava.lang.CharSequence;@4f126a05}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /tmp/.com.google.Chrome.Axc5yW}, goog:chromeOptions: {debuggerAddress: localhost:33471}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.22.0.5:4444/sessio..., se:cdpVersion: 110.0.5481.177, se:vnc: ws://172.22.0.5:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on LINUX (a8e9236504c1431ecc784372643f78bd)] -> id: LastName]
+Session ID: a8e9236504c1431ecc784372643f78bd
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:55)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at Pages.Register.confirm_registration(Register.java:25)
+at UiScripts.TestCases.DeliveryOrder.userRegistrationFourthTest(DeliveryOrder.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationFourthTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UiScripts.TestCases.DeliveryOrder@797badd3]" started-at="2023-03-13T17:14:00 GMT" name="tearDown" finished-at="2023-03-13T17:14:01 GMT" duration-ms="442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- UiScripts.TestCases.DeliveryOrder -->
+    </test> <!-- DeliveryOrder -->
+    <test started-at="2023-03-13T17:10:07 GMT" name="CompleteLogin" finished-at="2023-03-13T17:14:01 GMT" duration-ms="234193">
+      <class name="UiScripts.TestCases.CompleteLogin">
+        <test-method is-config="true" signature="InitializationDriver()[pri:0, instance:UiScripts.TestCases.CompleteLogin@2145433b]" started-at="2023-03-13T17:10:07 GMT" name="InitializationDriver" finished-at="2023-03-13T17:10:45 GMT" duration-ms="38260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializationDriver -->
+        <test-method signature="loginTest()[pri:0, instance:UiScripts.TestCases.CompleteLogin@2145433b]" started-at="2023-03-13T17:10:45 GMT" name="loginTest" finished-at="2023-03-13T17:14:00 GMT" duration-ms="195268" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '19-ea'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [c2c43295a4bf4a2da48ebe8d99a2cc84, findElement {using=id, value=Password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /tmp/.com.google.Chrome.Ddztvn}, goog:chromeOptions: {debuggerAddress: localhost:44893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.22.0.4:4444/sessio..., se:cdpVersion: 110.0.5481.177, se:vnc: ws://172.22.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2c43295a4bf4a2da48ebe8d99a2cc84]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '19-ea'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [c2c43295a4bf4a2da48ebe8d99a2cc84, findElement {using=id, value=Password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /tmp/.com.google.Chrome.Ddztvn}, goog:chromeOptions: {debuggerAddress: localhost:44893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.22.0.4:4444/sessio..., se:cdpVersion: 110.0.5481.177, se:vnc: ws://172.22.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2c43295a4bf4a2da48ebe8d99a2cc84
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:55)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at Pages.LoginPage.signIn(LoginPage.java:27)
+at UiScripts.TestCases.CompleteLogin.loginTest(CompleteLogin.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UiScripts.TestCases.CompleteLogin@2145433b]" started-at="2023-03-13T17:14:00 GMT" name="tearDown" finished-at="2023-03-13T17:14:01 GMT" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- UiScripts.TestCases.CompleteLogin -->
+    </test> <!-- CompleteLogin -->
+  </suite> <!-- OpenCartTests -->
+</testng-results>
